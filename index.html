@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Heart</title>
+    </head>
+    <body>
+        <img id="heart" src="Assets/heartoff.png" onclick="toggleheart()" alt="heartoff">
+
+        <script>
+            var toggle = "heartoff";
+            function toggleheart() {
+                if(toggle=="heartoff"){
+                    document.getElementById("heart").src ="Assets/hearton.png";
+                    toggle = "hearton";
+                }
+                else if(toggle == "hearton"){
+                    document.getElementById("heart").src="Assets/heartoff.png";
+                    toggle = "heartoff";
+                }
+            }
+        </script>
+    </body>
+</html>
